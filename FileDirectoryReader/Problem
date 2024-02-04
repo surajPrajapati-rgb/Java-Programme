@@ -1,0 +1,9 @@
+Write a shell script that declares and defines variables to store the name of a java class and the name of a directory consisting of a number of text files. The java program in the shell script will print the following information about the files in that directory.
+
+
+1) The total number of files
+2) The content of each file and the total number of words in each file.
+3) Word frequency (i.e, number of occurrences of each word in the file )
+4) Content of each file after removing the stopwords
+
+Note that you cannot use any libraries, even not for stopword removal. You must use your own list of stopwords and use them for the removal task.
