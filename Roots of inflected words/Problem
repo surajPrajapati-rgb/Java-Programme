@@ -1,0 +1,16 @@
+Assignment:
+Given a text paragraph or any paragraph taken by text file reading in Java, you have to find inflected words and print their root forms. You need to create one text area for showing (or entering) the paragraph. When you click on a certain button, another text area will show the inflected words along with their roots. You are not allowed to use any given libraries for this task. Simply take the stemmer project from certain group of students (the one some of you developed last semester) and modify that by adding new rules or techniques.
+
+As an example, consider the following text.
+
+He was flying 10000 feet above. All passengers including him were enjoying the flight.....
+
+Output may look like follows
+
+flying -- > fly
+Passengers --> Passenger
+... and so on.
+
+See the attached image to get a feel of how the output look like.
+
+***Note that you are not allowed to submit after closing date.
