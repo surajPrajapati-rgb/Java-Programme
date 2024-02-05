@@ -30,7 +30,6 @@ public class TextFieldGUI implements ActionListener{
 
         b1.addActionListener(this);
 
-        // Add components to the JFrame
         f.add(scrollPane1, BorderLayout.CENTER);
         f.add(scrollPane2, BorderLayout.CENTER);
         f.add(b1, BorderLayout.SOUTH);
@@ -46,9 +45,10 @@ public class TextFieldGUI implements ActionListener{
         for (String i : input1){
             Stemming obj = new Stemming();
             String[] t = obj.stemmed_text(i);
-            String temp = t[0] + " --> " + t[1] + "\n";
-
-            out += temp;
+            if (!Objects.equals(t[0], t[1])){
+                String temp = t[0] + " --> " + t[1] + "\n";
+                out += temp;
+        }
         }
         tf2.setText(out);
     }
