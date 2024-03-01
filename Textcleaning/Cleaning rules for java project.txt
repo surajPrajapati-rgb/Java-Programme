@@ -1,0 +1,24 @@
+Cleaning rules for java project
+	1. If any special character other than punctuation marks is found then it will be removed completely from the texts.
+		Array of characters to be removed fully: 
+
+			char[] removable = {'#', '@', '$', '%', '^', '*', '~', '`', '+', '=', '_', '|', '/', '>', '<', '(', ')', '{', '}', '[', ']', '\'}
+
+	2. Other punctuation marks will be retained or removed as per following condition:
+		Array of punctuation marks:
+			char[] punctuations = {'!', ':', ';', '"', '\'', '?', '.', ','}
+		1. If a punctuation mark is between two consecutive letters or digits then it is completely removed and letters or digits are 				concatenated.
+		2. If two or more punctuations are consecutive then last punctuation mark will be considered rest are ignored.
+		3. If after a character there is a punctuation mark followed by a space then it will be retained.
+
+	3. 	
+
+	4. Capitalization of First letter of sentence as per following rules:
+			char[] delimenaters = {'.', '?'};
+		1. Starting letter of the document will be capitalized.
+		2. If deliminators are followed by one space then ignore the space.(implement carefully)
+		3. If there is deliminator before the letter then capitalize the letter.
+
+	5. Cleaning of unnecessary spaces and lines will be done as per following conditions:
+		1. Consecutive two or more than two spaces will be terminated to one space.
+		2. Consecutive two or more than two lines will be terminated to one line.
